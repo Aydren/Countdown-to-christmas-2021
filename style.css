@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white; */
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: hsl(235, 16%, 14%);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+.background {
+    overflow: hidden;
+}
+
+#main-bg {
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: hsl(235, 16%, 14%);
+    }
+
+    .container {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header > h1 {
+        font-size: 40px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .counter-main {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .day,
+    .hour,
+    .minute,
+    .second {
+        font-size: 3rem;
+    }
+
+    #main-bg {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    #sd-bg {
+        position: fixed;
+        top: 0;
+    }
+
+    .background {
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .attribution { 
+        padding: 2rem;
+        font-size: 11px;
+        z-index: 1;
+    }
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+}
